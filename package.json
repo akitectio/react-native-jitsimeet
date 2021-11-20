@@ -39,13 +39,13 @@
     "meet",
     "sdk"
   ],
-  "repository": "https://github.com/tdduy.dev/react-native-jitsimeet",
-  "author": "JONY TRAN <tdduy.dev@gmail.com> (https://github.com/tdduy.dev)",
+  "repository": "https://github.com/tdduydev/react-native-jitsimeet",
+  "author": "JONY TRAN <tdduy.dev@gmail.com> (https://github.com/tdduydev)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tdduy.dev/react-native-jitsimeet/issues"
+    "url": "https://github.com/tdduydev/react-native-jitsimeet/issues"
   },
-  "homepage": "https://github.com/tdduy.dev/react-native-jitsimeet#readme",
+  "homepage": "https://github.com/tdduydev/react-native-jitsimeet#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
