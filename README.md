@@ -5,7 +5,7 @@ React Native Wrapper for Jitsi Meet SDK.
 ## Install
 
 ```sh
-npm i --save @tdduy.dev/react-native-jitsimeet
+npm i --save @tdduydev/react-native-jitsimeet
 ```
 
 Only supports React Native >= 0.60.
