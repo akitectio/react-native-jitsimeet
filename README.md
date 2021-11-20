@@ -1,3 +1,5 @@
+[![Node.js Package](https://github.com/tdduydev/react-native-jitsimeet/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/tdduydev/react-native-jitsimeet/actions/workflows/npm-publish.yml)
+----------------------------
 # React Native JitsiMeet
 
 React Native Wrapper for Jitsi Meet SDK.
