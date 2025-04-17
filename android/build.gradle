@@ -50,6 +50,8 @@ repositories {
     }
     google()
     jcenter()
+    maven { url "https://jitpack.io" }
+    maven { url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases" }
 }
 
 dependencies {
@@ -59,4 +61,7 @@ dependencies {
     implementation ('org.jitsi.react:jitsi-meet-sdk:3.10.2') {
         transitive = true
     }
+    
+    // Add the missing scalable video view dependency
+    implementation 'com.yqritc:android-scalablevideoview:1.0.4'
 }
