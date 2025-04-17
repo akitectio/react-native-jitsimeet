@@ -1,0 +1,45 @@
+allprojects {
+    buildscript {
+        repositories {
+            // Configure proper repository caching
+            maven { 
+                url "https://repo.maven.apache.org/maven2" 
+                // Don't cache changing modules for more than 0 seconds
+                metadataSources {
+                    mavenPom()
+                    artifact()
+                }
+            }
+        }
+    }
+
+    repositories {
+        // Configure proper repository caching
+        maven { 
+            url "https://repo.maven.apache.org/maven2"
+            metadataSources {
+                mavenPom()
+                artifact()
+            }
+        }
+    }
+}
+
+// Fix cache service configuration
+gradle.projectsLoaded {
+    rootProject.allprojects {
+        buildscript {
+            configurations.all {
+                resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+            }
+        }
+        configurations.all {
+            resolutionStrategy {
+                // Don't cache dynamic versions for more than 0 seconds
+                cacheDynamicVersionsFor 0, 'seconds'
+                // Don't cache changing modules for more than 0 seconds
+                cacheChangingModulesFor 0, 'seconds'
+            }
+        }
+    }
+}
